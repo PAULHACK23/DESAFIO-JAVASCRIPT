@@ -1,0 +1,171 @@
+///ejercicio 1
+//function avisoLluvia (estaLloviendo){
+  //if (estaLloviendo){
+    //console.log("Esta lloviendo")
+  //}else {
+   // console.log("No esta lloviendo")
+  //}
+//}
+//avisoLluvia(false) 
+
+///ejercicio 2
+
+//function calcular (x, y, z){
+//  let suma = x + y
+//  let resultado = suma * z
+//  return resultado
+//}
+//console.log(calcular(2,3,3))
+ 
+///ejercicio 3
+//function calculadora(operacion, x,y){
+///  if (operacion == "suma"){
+  //  return x + y
+//return x - y
+///  }else if (operacion == "multiplicacion"){
+ //   return x * y 
+///  } else if (operacion == "division"){
+ ///   return x / y 
+ ///   return x ** y
+ /// }else if (operacion == "residuo"){
+ //   return x % y
+//  } else {
+///    return -1
+//  }
+//}
+//console.log(calculadora ("residuo", 2,4))
+
+
+
+
+//function sumaTodosImpares (){
+//    return sumaTodosImpares = numero % 2 
+// 
+//  for (numero = i = 0; i = numero.lenght ; i++){
+//   if (i % 2 === 0){
+//    return par;
+//   }else{
+//    return impar;
+// 
+//   } 
+// 
+//hook
+//UseState
+
+////// lo que va en las parentesis $ va a ser el estado acutal osea el primer estado/nombre/count
+const  [count, setCount] = useState (0)
+console.log (useState)
+//ESTADO ACTUAL  ESTADO POSTERIOR 
+  
+const incrementCount = () => {
+  setCount (count + 1)
+  
+}
+const restarCount = () => {
+  setCount (count - 1)
+  
+}
+
+
+
+
+
+
+
+
+<>
+<p>Contador:{count}</p>
+<button onClick={incrementCount}>incrementar</button>
+<button onClick={restarCount} disabled={count==0? 'disabled':''}>Restar</button>
+</>
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    
+//  }
+// numero (2,5,7,4,6,8,7)
+// }
+// 
+// 
+// 
+// 
+// 
+// 
+// function esPar(num) {
+// if(num % 2 === 0) {
+// console.log("par")
+// }
+// else {
+// console.log("impar");
+// }
+// }
+// 
+// 
+// console.log(esPar(2))
+// console.log(esPar(5));
+// 
+// 
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+function sumarLikesDeUsuario(usuario9) {
+  // Verificamos si el objeto "usuario" tiene una propiedad "posts" y si es un array 
+  if (!Array.isArray(usuario9.posts)) {       
+  return 0; // Si no existe la propiedad "posts" o no es un array, devolvemos 0
+    }
+
+    } 
+  let sumaLikes = 0; // Variable para almacenar la suma total de like
+  // Recorremos el array "posts" usando un bucle for o forEach 
+  for (let i = 0; i < usuario9.posts.length; i++) {     
+  // Verificamos si el objeto "post" tiene una propiedad "likes" que es un número     
+  if (typeof usuario9.posts[i].likes === 'number') {
+        sumaLikes += usuario9.
+        sumaLikes += usuario9 
+  posts[i].likes; // Sumamos los likes del objeto "post" actual al total
+      }
+      return sumaLikes; // Devolvemos la suma total de likes
+    }
+    const usuario9 = {
+      nombre: "Juan",
+      
+      
+    
+   [
+      
+    {
+       
+    likes: 10 ,
+       
+    likes: 5 ,
+       
+    
+       
+    likes: 20 }
+      ]
+    }
+     
+    console.log(sumarLikesDeUsuario(usuario9)); // Output: 35 (10 + 5 + 20)
